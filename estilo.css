@@ -1,0 +1,243 @@
+
+body {
+    background-color: #e0e7ec;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.titulo {
+    font-size: 3.5rem;
+    margin: 20px 0;
+    color: #1a73e8;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.sobreMim {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.8;
+    padding: 0 15px;
+}
+
+.botao {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 12px 25px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.0rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.botao:hover {
+    background-color: #0d5bba;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.mensagem {
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 15px;
+    max-width: 800px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.conteudo-principal {
+    display:flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.lista-container, .tabela-container {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.lista-container h2, .tabela-container h2 {
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e0e7ec;
+    padding-bottom: 10px;
+}
+
+
+.lista-interesses {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-interesses li {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.lista-interesses li:hover {
+    background-color: #f5f7fa;
+    border-radius: 8px;
+}
+
+.lista-interesses h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.lista-interesses img {
+    max-width: 100%;
+    height: 200px;
+    width: 70%;
+    object-fit:cover;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.lista-interesses img:hover {
+    transform: scale(1.05);
+}
+
+
+.tabela-viagem {
+    width: 100%;
+    height: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.tabela-viagem tr {
+    transition: all 0.3s ease;
+}
+
+.tabela-viagem tr:hover {
+    background-color: #f5f7fa;
+}
+
+.tabela-viagem td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabela-viagem td:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    width: 40%;
+}
+
+.foto-tabela {
+    max-width: 100%;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.foto-tabela:hover {
+    transform: scale(1.05);
+}
+
+.link-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.botao-aventura {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.botao-aventura:hover {
+    background-color: #0d5bba;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.5rem;
+    }
+    
+    .sobreMim {
+        font-size: 1.2rem;
+    }
+    
+    .conteudo-principal {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .lista-container, .tabela-container {
+        width: 100%;
+    }
+    
+    .botao, .botao-aventura {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    
+    .lista-interesses img, .foto-tabela {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 2rem;
+    }
+    
+    .sobreMim {
+        font-size: 1rem;
+    }
+    
+    .lista-container h2, .tabela-container h2 {
+        font-size: 1.5rem;
+    }
+}
